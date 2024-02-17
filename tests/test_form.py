@@ -1,4 +1,4 @@
-import os.path
+import os
 from selene import browser, have, be, by
 
 
