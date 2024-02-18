@@ -8,7 +8,7 @@ def test_form():
     browser.element('#firstName').should(be.blank).type("Serafima")
     browser.element('#lastName').should(be.blank).type("Lykova")
     browser.element('#userEmail').should(be.blank).type("Lykova@mail.ru")
-    browser.element('#genterWrapper > div.col-md-9.col-sm-12 > div:nth-child(2) > label').click()
+    browser.element('[for="gender-radio-2"]').click()
     browser.element('#userNumber').should(be.blank).type("1234567890")
     browser.element('#dateOfBirthInput').click()
     browser.element('.react-datepicker__year-select').click().element(by.text('1990')).click()
