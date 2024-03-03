@@ -5,11 +5,11 @@ def test_form():
     registration_page = RegistrationPage()
     registration_page.open()
     registration_page \
-        .fill_firstname('Serafima') \
-        .fill_lastname('Lykova') \
+        .fill_first_name('Serafima') \
+        .fill_last_name('Lykova') \
         .fill_email('Lykova@mail.ru') \
         .fill_gender('Female') \
-        .fill_number('1234567890') \
+        .fill_phone_number('1234567890') \
         .fill_date_of_birth('1990', 'December', '05') \
         .fill_subjects('Maths', 'English') \
         .fill_hobbies('Sports') \

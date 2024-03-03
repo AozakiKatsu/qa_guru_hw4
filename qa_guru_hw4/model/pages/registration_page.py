@@ -8,11 +8,11 @@ class RegistrationPage:
         browser.open('https://demoqa.com/automation-practice-form')
         return self
 
-    def fill_firstname(self, value):
+    def fill_first_name(self, value):
         browser.element('#firstName').should(be.blank).type(value)
         return self
 
-    def fill_lastname(self, value):
+    def fill_last_name(self, value):
         browser.element('#lastName').should(be.blank).type(value)
         return self
 
@@ -24,7 +24,7 @@ class RegistrationPage:
         browser.all('[name=gender]').element_by(have.value(value)).element('..').click()
         return self
 
-    def fill_number(self, value):
+    def fill_phone_number(self, value):
         browser.element('#userNumber').should(be.blank).type(value)
         return self
 
@@ -69,4 +69,3 @@ class RegistrationPage:
     def should_register_user_with(self, *value):
         browser.element('.table').all('td').even.should(have.exact_texts(value))
         return self
-
