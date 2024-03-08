@@ -1,6 +1,6 @@
 from selene import browser, have
 
-from qa_guru_hw4 import recource
+from qa_guru_hw4 import resource
 from qa_guru_hw4.data.users import User
 
 
@@ -25,7 +25,7 @@ class RegistrationPage:
         self.submit = browser.element('#submit')
 
     def open(self):
-        browser.open('https://demoqa.com/automation-practice-form')
+        browser.open('/automation-practice-form')
         return self
 
     def register(self, user: User):
