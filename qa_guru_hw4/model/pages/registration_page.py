@@ -2,6 +2,8 @@ import os
 
 from selene import browser, be, have
 
+from qa_guru_hw4.model.pages import resource
+
 
 class RegistrationPage:
     def open(self):
@@ -47,7 +49,7 @@ class RegistrationPage:
         return self
 
     def upload_file(self, value):
-        browser.element('#uploadPicture').send_keys(os.path.abspath(value))
+        browser.element('#uploadPicture').send_keys(resource.path(value))
         return self
 
     def fill_address(self, value):
