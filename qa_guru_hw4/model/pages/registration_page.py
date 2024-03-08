@@ -1,8 +1,6 @@
-import os
-
 from selene import browser, be, have
 
-from qa_guru_hw4.model.pages import resource
+from qa_guru_hw4.model import resource
 
 
 class RegistrationPage:
