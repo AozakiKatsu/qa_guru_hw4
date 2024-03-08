@@ -1,6 +1,6 @@
 from selene import browser, have
 
-from qa_guru_hw4 import resource
+from qa_guru_hw4.model import resource
 from qa_guru_hw4.data.users import User
 
 
