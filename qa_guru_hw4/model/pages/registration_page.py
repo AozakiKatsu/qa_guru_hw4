@@ -42,7 +42,7 @@ class RegistrationPage:
         ).click()
         self.subjects.type(user.subjects).press_enter()
         self.hobbies.element_by(have.exact_text(user.hobbies)).click()
-        self.upload_file.send_keys(recource.path(user.upload_file))
+        self.upload_file.send_keys(resource.path(user.upload_file))
         self.address.type(user.address)
         self.state.type(user.state).press_enter()
         self.city.type(user.city).press_enter()
